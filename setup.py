@@ -26,6 +26,7 @@ setup(name='silvatheme.esolia',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'silva.export.html',
           ],
 
       )
