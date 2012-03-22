@@ -1,0 +1,487 @@
+/*
+Inspired by
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background: #F5F6F7;
+  font-family:Open Sans,sans-serif;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+  font-weight: normal;
+  color: #3E3E3E;
+  line-height:1.2;
+}
+
+h1 {
+  font-size: 29px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+p, ul, ol {
+  margin: 0 0 0.5em 0;
+  text-align: justify;
+  font-size: 12px;
+}
+
+a:link {
+  color: #333333;
+}
+
+a:visited {
+  color: #333333;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #003448;
+}
+
+img {
+  border: none;
+}
+
+img.left {
+  float: left;
+  margin-right: 15px;
+}
+
+img.right {
+  float: right;
+  margin-left: 15px;
+}
+
+/* top bar */
+
+#top-bar {
+  height: 96px;
+  background: url(images/bg_top_bar.png) repeat-x top left;
+  margin-bottom: 20px;
+}
+
+#top-bar ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#top-bar ul li {
+  float: left;
+}
+
+#top-bar ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1px;
+  padding: 7px 16px 5px 5px;
+  background: url(images/bg_breadcrumb_item.png) no-repeat top right;
+}
+
+#top-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+#site-actions {
+  height: 30px;
+}
+
+#content-actions {
+  height: 66px;
+}
+
+/* Header */
+
+#header {
+  width: 850px;
+  height: 82px;
+  margin: 0 auto 40px auto;
+}
+
+#logo {
+  background: url(images/logo.png) no-repeat top left;
+  width: 120px;
+  height: 55px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+}
+
+#header h1 {
+  font-size: 38px;
+  color: #494949;
+}
+
+#header h1 sup {
+  vertical-align: text-top;
+  font-size: 24px;
+}
+
+#header h1 a {
+  color: #494949;
+}
+
+#header h2 {
+  margin-top: -10px;
+  font-size: 12px;
+  color: #A0A0A0;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+/* Content wrapper */
+
+#content-wrapper {
+  margin: 0 auto;
+  width: 996px;
+}
+
+/* Menu */
+
+#menu {
+  float: right;
+  background: #eff7ff;
+  border: 1px solid #cbcbcd;
+  min-height: 55px;
+  width: 200px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 5px 0 0 0;
+  list-style: none;
+}
+
+#menu ul:first-child {
+  background: url(images/bg_right_menu.png) repeat-x top left;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu a {
+  display: block;
+  /*float: left;*/
+  margin-left: 5px;
+  padding: 0 7px 7px 7px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
+#menu .active a {
+
+}
+
+/* Page */
+
+#site {
+  background-color: #F5F6F7;
+}
+
+#page {
+  background: #fff;
+  width: 775px;
+  border: 1px solid #cbcbcd;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+/* Content */
+
+#content {
+  float: left;
+  width: 575px;
+}
+
+/* Post */
+
+.post {
+}
+
+.post .title {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.post .entry {
+}
+
+.post .meta {
+  padding: 15px 0 60px 0;
+}
+
+.post .meta p {
+  margin: 0;
+  line-height: normal;
+  color: #999999;
+}
+
+.post .meta .byline {
+  float: left;
+}
+
+.post .meta .links {
+  float: right;
+}
+
+.post .meta .more {
+  padding: 0 20px 0 18px;
+}
+
+.post .meta .comments {
+  padding-left: 22px;
+}
+
+.post .meta b {
+  display: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+  float: right;
+  width: 195px;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li {
+  margin-bottom: 40px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+  margin: 0 0 0.5em;
+}
+
+#sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Silva menu styling */
+
+/* navigation depth styling */
+
+#sidebar ul.navigation-level-1, #sidebar ul.navigation-level-2,
+#sidebar ul.navigation-level-3 {
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+#navigation-menu li a.selected {
+  color: #7BAA0F;
+}
+
+/* Search */
+
+#search {
+}
+
+#search h2 {
+  margin-bottom: 20px;
+}
+
+#s {
+  width: 120px;
+  margin-right: 5px;
+  padding: 3px;
+  border: 1px solid #F0F0F0;
+}
+
+#x {
+  padding: 3px;
+  border: none;
+  font-size: 11px;
+  color: #4F4F4F;
+}
+
+/* Boxes */
+
+.box1 {
+  padding: 20px;
+}
+
+.box2 {
+  color: #BABABA;
+}
+
+.box2 h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.box2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box2 a:link, .box2 a:hover, .box2 a:active, .box2 a:visited  {
+  color: #EDEDED;
+}
+
+/* Footer */
+
+#footer {
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#legal {
+  clear: both;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #375C69;
+  font-size:13px;
+}
+
+#legal a {
+  color: #476B77;
+}
+
+#fbox1, #fbox2, #fbox3 {
+  float: left;
+}
+
+#fbox1 {
+  width: 310px;
+}
+
+#fbox2 {
+  width: 200px;
+  padding-left: 70px;
+}
+
+#fbox3 {
+  width: 200px;: 38
+  padding-left: 70px;
+}
+
+/* Forms */
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, textarea, select {
+  padding: 0.1em;
+  color: #333;
+  font-size: 13px;
+}
+
+input, textarea {
+  border: 1px solid #aaa;
+  margin: 0.1em 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Login form */
+
+div.form {
+  width: 30em;
+  margin: 1em 0;
+  padding: 0.2em 0.5em 0.3em;
+  border: 1px solid #808080;
+}
+/* for a stacked form remove floats and heights */
+div.form-title {
+  height: 1.6em;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* element borders
+div.form-element {
+  border-top: 1px solid gray;
+}*/
+div.form-label {
+  float: left;
+  width: 7em;
+  height: 2em;
+}
+div.form-label label {
+  display: block;
+  margin: 0.2em 0 0;
+  font-weight: normal;
+}
+div.form-field {
+  height: 2em;
+}
+div.form-field input[type="text"],
+  div.form-field input[type="password"] {
+  float: right;
+  width: 22em;
+}
+
+div.form-actions input.submit {
+  float: right;
+  padding: 0.1em 1.5em;
+  font-weight: bold;
+}
+div.form-actions input.cancel {
+  padding: 0.1em 1.5em;
+}
+
+/* style for news items properties form, i.e. the newsitemtemplate
+   when using content layout */
+.newsproperties {
+ float: right;
+}
+
+.newsproperties .form-display-label {
+  font-weight: bold;
+}
+.newsproperties .form-display-row:hover {
+  background-color: #EEE;
+}
+/* end style for news items properties form */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Style is reflection */
