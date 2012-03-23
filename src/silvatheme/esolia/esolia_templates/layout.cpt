@@ -26,18 +26,14 @@
 
 <div id="content-wrapper">
   <div id="menu">
-    <ul>
-      <li tal:repeat="publication provider.top_menu_items()"
-          tal:attributes="class provider.current_publication_class(publication)">
-        <a tal:attributes="href path:publication/@@absolute_url"
-           tal:content="publication.get_title()">
-          publication title goes here
-        </a>
-      </li>
-    </ul>
     <!-- start sidebar -->
     <div id="sidebar">
-      <tal:block tal:replace="structure provider:navigation" />
+      <ul>
+        <li>
+          <a tal:content="provider.current_navigation_title()"></a>
+          <tal:block tal:replace="structure provider:navigation" />
+        </li>
+      </ul>
     </div>
     <!-- end sidebar -->
     <div style="clear: both;">&nbsp;</div>

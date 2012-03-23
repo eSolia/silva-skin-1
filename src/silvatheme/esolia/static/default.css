@@ -170,16 +170,6 @@ border-radius: 5px;
   background: url(images/bg_right_menu.png) repeat-x top left;
 }
 
-#menu ul li:first-child a {
-  color: #3A588A;
-  text-transform: uppercase;
-}
-
-#menu ul ul li:first-child a, #menu ul ul ul li:first-child a {
-  color: #5A5A5A;
-  text-transform: none;
-}
-
 #menu ul ul, #menu ul ul ul {
   background: none;
 }
