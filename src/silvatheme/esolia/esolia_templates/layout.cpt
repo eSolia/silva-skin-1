@@ -1,16 +1,20 @@
 <div id="site">
   <div id="top-bar">
-    <div id="site-actions" tal:content="structure provider:breadcrumbs">
-       <ul class="left">
-        <li><a href="#">Wikis</a></li>
-        <li><a href="#">eSolia</a></li>
-        <li><a href="#">Office Handbook</a></li>
-      </ul>
+    <div id="site-actions">
+       <div class="left" tal:content="structure provider:breadcrumbs">
+         breadcrumb
+      </div>
       <ul class="right">
-        <li><a href="#">Edit</a></li>
-        <li><a href="#">Add</a></li>
-        <li><a href="#">Configure</a></li>
-        <li><a href="#">Search</a></li>
+        <li id="search"
+            tal:condition="exists:context/search">
+          <form method="get" action="search"
+                tal:attributes="action path:context/search/@@absolute_url">
+            <fieldset>
+              <input type="text" name="fulltext" value="" />
+              <input type="submit" name="search_submit" value="Search" />
+            </fieldset>
+          </form>
+        </li>
       </ul>
     </div>
     <div id="content-actions">
@@ -19,11 +23,6 @@
     </div>
   </div>
   <!-- end of top bar -->
-  <!--<div id="header">
-    <h1><a href="#"
-           tal:attributes="href provider.publication_url"
-           tal:content="provider.publication_title">Silva</a></h1>
-  </div>-->
 
 <div id="content-wrapper">
   <div id="menu">
@@ -36,7 +35,14 @@
         </a>
       </li>
     </ul>
+    <!-- start sidebar -->
+    <div id="sidebar">
+      <tal:block tal:replace="structure provider:navigation" />
+    </div>
+    <!-- end sidebar -->
+    <div style="clear: both;">&nbsp;</div>
   </div>
+
   <!-- start page -->
   <div id="page">
     <!-- start content -->
@@ -49,28 +55,7 @@
       </div>
     </div>
     <!-- end content -->
-    <!-- start sidebar -->
-    <div id="sidebar">
-      <ul>
-        <li id="search"
-            tal:condition="exists:context/search">
-          <h3>Search</h3>
-          <form method="get" action="search"
-                tal:attributes="action path:context/search/@@absolute_url">
-            <fieldset>
-              <input type="text" name="fulltext" value="" />
-              <input type="submit" name="search_submit" value="Search" />
-            </fieldset>
-          </form>
-        </li>
-        <li>
-          <h2 tal:content="provider.current_navigation_title()"></h2>
-          <tal:block tal:replace="structure provider:navigation" />
-        </li>
-      </ul>
-    </div>
-    <!-- end sidebar -->
-    <div style="clear: both;">&nbsp;</div>
+
     <!-- start footer -->
     <div id="footer">
       <div class="wrap" tal:replace="structure provider:footer">
