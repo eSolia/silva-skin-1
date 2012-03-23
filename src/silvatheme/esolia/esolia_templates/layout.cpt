@@ -30,7 +30,7 @@
     <div id="sidebar">
       <ul>
         <li>
-          <a tal:content="provider.current_navigation_title()"></a>
+          <a class="title" tal:content="provider.current_navigation_title()"></a>
           <tal:block tal:replace="structure provider:navigation" />
         </li>
       </ul>
