@@ -190,6 +190,7 @@ border-radius: 5px;
 
 #menu a.title {
   text-transform: uppercase;
+  color: #3B589C;
 }
 
 #menu a:hover {
