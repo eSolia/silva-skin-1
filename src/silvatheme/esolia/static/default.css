@@ -220,7 +220,6 @@ border-radius: 5px;
 
 #content {
   float: left;
-  width: 575px;
 }
 
 /* Post */
@@ -461,6 +460,44 @@ div.form-actions input.cancel {
 
 .right {
   float: right;
+}
+
+/* image alignments */
+
+div.image-float-left {
+  float:left;
+  clear:both;
+  margin:6px 10px 5px 0;
+}
+
+div.image-float-right {
+  float:right;
+  clear:both;
+  margin:6px 0 5px 10px;
+}
+
+.align-right {
+  text-align:right; 
+  clear:both;
+}
+
+div.image-left {
+  text-align:left;
+  margin:5px 6px 5px 0;
+}
+
+div.image-right {
+  text-align:right;
+  margin:8px 0 10px 20px;
+}
+
+div.image-center {
+  text-align:center;
+  margin:0;
+}
+
+img.default {
+  margin-bottom:0.7em;
 }
 
 /* Style is reflection */
